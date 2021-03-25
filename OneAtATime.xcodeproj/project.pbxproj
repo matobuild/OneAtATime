@@ -11,6 +11,11 @@
 		485DAFFD26062534002100D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DAFFC26062534002100D1 /* ContentView.swift */; };
 		485DAFFF2606253C002100D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 485DAFFE2606253C002100D1 /* Assets.xcassets */; };
 		485DB0022606253C002100D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 485DB0012606253C002100D1 /* Preview Assets.xcassets */; };
+		485DB013260709CA002100D1 /* NewLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DB012260709CA002100D1 /* NewLoginView.swift */; };
+		485DB01A26070A72002100D1 /* UserRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DB01926070A72002100D1 /* UserRegistrationViewModel.swift */; };
+		485DB022260815FC002100D1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DB021260815FC002100D1 /* LoginView.swift */; };
+		485DB0282608F212002100D1 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DB0272608F212002100D1 /* CustomButton.swift */; };
+		485DB02C260C0455002100D1 /* HightlightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DB02B260C0455002100D1 /* HightlightButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		485DAFFE2606253C002100D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		485DB0012606253C002100D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		485DB0032606253C002100D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		485DB012260709CA002100D1 /* NewLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLoginView.swift; sourceTree = "<group>"; };
+		485DB01926070A72002100D1 /* UserRegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationViewModel.swift; sourceTree = "<group>"; };
+		485DB021260815FC002100D1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		485DB0272608F212002100D1 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		485DB02B260C0455002100D1 /* HightlightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HightlightButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				485DAFFA26062534002100D1 /* OneAtATimeApp.swift */,
-				485DAFFC26062534002100D1 /* ContentView.swift */,
+				485DB01D26070AC2002100D1 /* Model */,
+				485DB01C26070AA9002100D1 /* View */,
 				485DAFFE2606253C002100D1 /* Assets.xcassets */,
 				485DB0032606253C002100D1 /* Info.plist */,
 				485DB0002606253C002100D1 /* Preview Content */,
@@ -67,6 +78,34 @@
 				485DB0012606253C002100D1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		485DB01C26070AA9002100D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				485DAFFC26062534002100D1 /* ContentView.swift */,
+				485DB012260709CA002100D1 /* NewLoginView.swift */,
+				485DB021260815FC002100D1 /* LoginView.swift */,
+				485DB0262608F1ED002100D1 /* parts */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		485DB01D26070AC2002100D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				485DB01926070A72002100D1 /* UserRegistrationViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		485DB0262608F1ED002100D1 /* parts */ = {
+			isa = PBXGroup;
+			children = (
+				485DB0272608F212002100D1 /* CustomButton.swift */,
+				485DB02B260C0455002100D1 /* HightlightButton.swift */,
+			);
+			path = parts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				485DB01A26070A72002100D1 /* UserRegistrationViewModel.swift in Sources */,
+				485DB02C260C0455002100D1 /* HightlightButton.swift in Sources */,
+				485DB013260709CA002100D1 /* NewLoginView.swift in Sources */,
+				485DB0282608F212002100D1 /* CustomButton.swift in Sources */,
 				485DAFFD26062534002100D1 /* ContentView.swift in Sources */,
+				485DB022260815FC002100D1 /* LoginView.swift in Sources */,
 				485DAFFB26062534002100D1 /* OneAtATimeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
