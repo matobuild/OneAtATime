@@ -1,0 +1,6 @@
+framework module Pods_OneAtATime {
+  umbrella header "Pods-OneAtATime-umbrella.h"
+
+  export *
+  module * { export * }
+}
