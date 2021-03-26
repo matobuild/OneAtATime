@@ -7,5 +7,6 @@ target 'OneAtATime' do
 
   # Pods for OneAtATime
 pod 'Firebase/Auth'
+pod 'Firebase/Analytics'
 
 end

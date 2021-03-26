@@ -6,9 +6,12 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct LoginView: View {
   @State var showNewLoginView = false
+  @State var email = ""
+  @State var password = ""
   
   var body: some View {
     if showNewLoginView{
@@ -21,10 +24,11 @@ struct LoginView: View {
           .font(.system(.largeTitle, design: .rounded))
           .bold()
           .padding(.bottom, 30)
-        //        FormField(fieldName: "Username", fieldValue: <#T##Binding<String>#>)
-        //        FormField(fieldName: "Password", fieldValue: <#T##Binding<String>#>, isSecure: true)
+                FormField(fieldName: "Username", fieldValue: $email)
+                FormField(fieldName: "Password", fieldValue: $password, isSecure: true)
         Button(action: {
           //go to login
+          login()
         }){
           CustomButton(name: "Log in ")
         }
@@ -45,6 +49,16 @@ struct LoginView: View {
         Spacer()
       }
       .padding()
+    }
+  }
+  
+  func login() {
+    Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+      if error != nil {
+        print(error?.localizedDescription ?? "")
+      } else {
+        print("success")
+      }
     }
   }
 }
