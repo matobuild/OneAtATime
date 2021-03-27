@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		484A9219260EEFB500C0F942 /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484A9218260EEFB500C0F942 /* EditProfile.swift */; };
+		484A921C260EF06E00C0F942 /* TopTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484A921B260EF06E00C0F942 /* TopTitle.swift */; };
 		485DAFFB26062534002100D1 /* OneAtATimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DAFFA26062534002100D1 /* OneAtATimeApp.swift */; };
 		485DAFFD26062534002100D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DAFFC26062534002100D1 /* ContentView.swift */; };
 		485DAFFF2606253C002100D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 485DAFFE2606253C002100D1 /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		484A9218260EEFB500C0F942 /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
+		484A921B260EF06E00C0F942 /* TopTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTitle.swift; sourceTree = "<group>"; };
 		485DAFF726062534002100D1 /* OneAtATime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneAtATime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		485DAFFA26062534002100D1 /* OneAtATimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneAtATimeApp.swift; sourceTree = "<group>"; };
 		485DAFFC26062534002100D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 				485DAFFC26062534002100D1 /* ContentView.swift */,
 				485DB012260709CA002100D1 /* NewLoginView.swift */,
 				485DB021260815FC002100D1 /* LoginView.swift */,
+				484A9218260EEFB500C0F942 /* EditProfile.swift */,
 				485DB0262608F1ED002100D1 /* parts */,
 			);
 			path = View;
@@ -114,6 +119,7 @@
 			children = (
 				485DB0272608F212002100D1 /* CustomButton.swift */,
 				485DB02B260C0455002100D1 /* HightlightButton.swift */,
+				484A921B260EF06E00C0F942 /* TopTitle.swift */,
 			);
 			path = parts;
 			sourceTree = "<group>";
@@ -132,7 +138,6 @@
 				634A98DF3989DB9E52AE1F6E /* Pods-OneAtATime.debug.xcconfig */,
 				9C5D21B07E114087CDB8646F /* Pods-OneAtATime.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -252,7 +257,9 @@
 			files = (
 				485DB01A26070A72002100D1 /* UserRegistrationViewModel.swift in Sources */,
 				485DB02C260C0455002100D1 /* HightlightButton.swift in Sources */,
+				484A921C260EF06E00C0F942 /* TopTitle.swift in Sources */,
 				485DB013260709CA002100D1 /* NewLoginView.swift in Sources */,
+				484A9219260EEFB500C0F942 /* EditProfile.swift in Sources */,
 				485DB0282608F212002100D1 /* CustomButton.swift in Sources */,
 				485DAFFD26062534002100D1 /* ContentView.swift in Sources */,
 				485DB022260815FC002100D1 /* LoginView.swift in Sources */,

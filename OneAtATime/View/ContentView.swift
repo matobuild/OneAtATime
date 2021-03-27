@@ -20,11 +20,8 @@ struct ContentView: View {
         Color.red
           .ignoresSafeArea()
         VStack {
-          Text("One at a time")
-            .font(.system(.largeTitle, design: .rounded))
-            .fontWeight(.heavy)
+          TopTitle(title: "One at a time")
             .foregroundColor(.white)
-            .padding()
           
           Button(action: {
             //go to net page

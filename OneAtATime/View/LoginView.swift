@@ -20,17 +20,23 @@ struct LoginView: View {
         .transition(.slide)
     }else{
       VStack{
-        Text("Log in")
-          .font(.system(.largeTitle, design: .rounded))
-          .bold()
-          .padding(.bottom, 30)
+        TopTitle(title: "Log in")
+        
                 FormField(fieldName: "Email", fieldValue: $email)
                 FormField(fieldName: "Password", fieldValue: $password, isSecure: true)
+        
         Button(action: {
           //go to login
           login()
         }){
-          CustomButton(name: "Log in ")
+          if !(email.isEmpty || password.isEmpty){
+            CustomButton(name: "Log in ")
+          }else{
+            CustomButton(name: "Log in ")
+              .grayscale(0.4)
+              .disabled(true)
+          }
+          
         }
         
         HStack {

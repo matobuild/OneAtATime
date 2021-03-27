@@ -21,10 +21,7 @@ struct NewLoginView: View {
         .transition(.slide)
     }else{
       VStack {
-        Text("Create an account")
-          .font(.system(.largeTitle, design: .rounded))
-          .bold()
-          .padding(.bottom, 30)
+        TopTitle(title: "Create an account")
         
         FormField(fieldName: "Email", fieldValue: $userRegistrationViewModel.email)
         RequirementText(iconColor: userRegistrationViewModel.isEmailValid ? Color.secondary : Color(red: 251/255, green: 128/255, blue: 128/255), text: "Is a valid email", isStrikeThrough: userRegistrationViewModel.isEmailValid)
@@ -42,7 +39,13 @@ struct NewLoginView: View {
           // Proceed to the next screen
           createNewLogin()
         }) {
-          CustomButton(name: "Sign Up")
+          if (userRegistrationViewModel.isEmailValid && userRegistrationViewModel.isPasswordLengthValid && userRegistrationViewModel.isPasswordCapitalLetter){
+            CustomButton(name: "Sign Up")
+          }else{
+            CustomButton(name: "Sign Up")
+              .grayscale(0.4)
+              .disabled(true)
+          }
         }
         
         HStack {
