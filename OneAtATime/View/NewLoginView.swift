@@ -6,12 +6,9 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct NewLoginView: View {
-  
-  //    @State private var username = ""
-  //    @State private var password = ""
-  //    @State private var passwordConfirm = ""
   
   @State var showLoginView = false
   
@@ -29,8 +26,8 @@ struct NewLoginView: View {
           .bold()
           .padding(.bottom, 30)
         
-        FormField(fieldName: "Username", fieldValue: $userRegistrationViewModel.username)
-        RequirementText(iconColor: userRegistrationViewModel.isUsernameLengthValid ? Color.secondary : Color(red: 251/255, green: 128/255, blue: 128/255), text: "A minimum of 4 characters", isStrikeThrough: userRegistrationViewModel.isUsernameLengthValid)
+        FormField(fieldName: "Email", fieldValue: $userRegistrationViewModel.email)
+        RequirementText(iconColor: userRegistrationViewModel.isEmailValid ? Color.secondary : Color(red: 251/255, green: 128/255, blue: 128/255), text: "Is a valid email", isStrikeThrough: userRegistrationViewModel.isEmailValid)
           .padding()
         
         FormField(fieldName: "Password", fieldValue: $userRegistrationViewModel.password, isSecure: true)
@@ -39,14 +36,11 @@ struct NewLoginView: View {
           RequirementText(iconName: "lock.open", iconColor: userRegistrationViewModel.isPasswordCapitalLetter ? Color.secondary : Color(red: 251/225, green: 128/225, blue: 128/225), text: "One uppercase letter", isStrikeThrough: userRegistrationViewModel.isPasswordCapitalLetter)
         }
         .padding()
-        
-        FormField(fieldName: "Confirm Password", fieldValue: $userRegistrationViewModel.passwordConfirm, isSecure: true)
-        RequirementText(iconColor: userRegistrationViewModel.isPasswordConfirmValid ? Color.secondary : Color(red: 251/255, green: 128/255, blue: 128/255) ,text: "Your confirm password should be the same as password", isStrikeThrough: userRegistrationViewModel.isPasswordConfirmValid)
-          .padding()
-          .padding(.bottom, 50)
+
         
         Button(action: {
           // Proceed to the next screen
+          createNewLogin()
         }) {
           CustomButton(name: "Sign Up")
         }
@@ -70,6 +64,16 @@ struct NewLoginView: View {
     }
   }
   
+  func createNewLogin() {
+    Auth.auth().createUser(withEmail: userRegistrationViewModel.email, password: userRegistrationViewModel.password) { authResult, error in
+      if error != nil {
+        print(error?.localizedDescription ?? "")
+      } else {
+        print("successfully create new user login")
+        //go to next page
+      }
+    }
+  }
 }
 
 struct NewLoginView_Previews: PreviewProvider {

@@ -54,3 +54,12 @@ struct ContentView_Previews: PreviewProvider {
     ContentView()
   }
 }
+
+
+/*
+ 1.sign up
+ 2.profile page
+ 3.display person page
+ 4.messaging
+ */
+ 

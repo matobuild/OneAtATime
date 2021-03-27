@@ -10,26 +10,23 @@ import Combine
 
 class UserRegistrationViewModel: ObservableObject {
   //input
-  @Published var username = ""
+  @Published var email = ""
   @Published var password = ""
-  @Published var passwordConfirm = ""
   
   //output
-  @Published var isUsernameLengthValid = false
+  @Published var isEmailValid = false
   @Published var isPasswordLengthValid = false
   @Published var isPasswordCapitalLetter = false
-  @Published var isPasswordConfirmValid = false
-
 
 private var cancellableSet: Set<AnyCancellable> = []
 
 init(){
-  $username
+  $email
     .receive(on: RunLoop.main)
-    .map{ username in
-      return username.count >= 4
+    .map{email in
+      return email.contains("@") && email.contains(".com")
     }
-    .assign(to: \.isUsernameLengthValid, on: self)
+    .assign(to: \.isEmailValid, on: self)
     .store(in: &cancellableSet)
 
   $password
@@ -52,15 +49,5 @@ init(){
     }
     .assign(to: \.isPasswordCapitalLetter, on: self)
     .store(in: &cancellableSet)
-  
-  Publishers.CombineLatest($password, $passwordConfirm)
-    .receive(on: RunLoop.main)
-    .map{ (password, passwordConfirm) in
-      return !passwordConfirm.isEmpty && (passwordConfirm == password)
-    }
-    .assign(to: \.isPasswordConfirmValid, on: self)
-    .store(in: &cancellableSet)
-  
-  
 }
 }

@@ -24,7 +24,7 @@ struct LoginView: View {
           .font(.system(.largeTitle, design: .rounded))
           .bold()
           .padding(.bottom, 30)
-                FormField(fieldName: "Username", fieldValue: $email)
+                FormField(fieldName: "Email", fieldValue: $email)
                 FormField(fieldName: "Password", fieldValue: $password, isSecure: true)
         Button(action: {
           //go to login
@@ -57,7 +57,7 @@ struct LoginView: View {
       if error != nil {
         print(error?.localizedDescription ?? "")
       } else {
-        print("success")
+        print("successfully login")
       }
     }
   }
