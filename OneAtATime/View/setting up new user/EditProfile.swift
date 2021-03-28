@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct EditProfile: View {
-  @State var name = ""
+  @State private var name = ""
   
   var body: some View {
     VStack {
@@ -19,9 +19,9 @@ struct EditProfile: View {
         //go to next page
       }){
         if !(name.isEmpty){
-          CustomButton(name: "Next")
+          ConfirmButton(name: "Next")
         }else{
-          CustomButton(name: "Next")
+          ConfirmButton(name: "Next")
             .grayscale(0.4)
             .disabled(true)
         }

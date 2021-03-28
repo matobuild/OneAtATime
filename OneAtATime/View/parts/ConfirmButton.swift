@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CustomButton: View {
+struct ConfirmButton: View {
   let name : String
   var body: some View {
     Text(name)
@@ -24,6 +24,6 @@ struct CustomButton: View {
 
 struct CustomButton_Previews: PreviewProvider {
   static var previews: some View {
-    CustomButton(name: "example")
+    ConfirmButton(name: "example")
   }
 }

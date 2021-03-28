@@ -10,7 +10,7 @@ import Firebase
 
 struct NewLoginView: View {
   
-  @State var showLoginView = false
+  @State private var showLoginView = false
   
   @ObservedObject private var userRegistrationViewModel = UserRegistrationViewModel()
   
@@ -40,9 +40,9 @@ struct NewLoginView: View {
           createNewLogin()
         }) {
           if (userRegistrationViewModel.isEmailValid && userRegistrationViewModel.isPasswordLengthValid && userRegistrationViewModel.isPasswordCapitalLetter){
-            CustomButton(name: "Sign Up")
+            ConfirmButton(name: "Sign Up")
           }else{
-            CustomButton(name: "Sign Up")
+            ConfirmButton(name: "Sign Up")
               .grayscale(0.4)
               .disabled(true)
           }

@@ -9,9 +9,9 @@ import SwiftUI
 import Firebase
 
 struct LoginView: View {
-  @State var showNewLoginView = false
-  @State var email = ""
-  @State var password = ""
+  @State private var showNewLoginView = false
+  @State private var email = ""
+  @State private var password = ""
   
   var body: some View {
     if showNewLoginView{
@@ -30,9 +30,9 @@ struct LoginView: View {
           login()
         }){
           if !(email.isEmpty || password.isEmpty){
-            CustomButton(name: "Log in ")
+            ConfirmButton(name: "Log in ")
           }else{
-            CustomButton(name: "Log in ")
+            ConfirmButton(name: "Log in ")
               .grayscale(0.4)
               .disabled(true)
           }
@@ -40,9 +40,7 @@ struct LoginView: View {
         }
         
         HStack {
-          Text("Dont have an account?")
-            .font(.system(.body, design: .rounded))
-            .bold()
+          Normal(text: "Dont have an account?")
           
           Button(action: {
             self.showNewLoginView = true
@@ -74,3 +72,4 @@ struct LoginView_Previews: PreviewProvider {
     LoginView()
   }
 }
+
