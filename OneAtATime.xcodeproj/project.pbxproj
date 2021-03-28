@@ -28,6 +28,7 @@
 		48DFC00F2610E1C000B0A3F1 /* Sexual Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DFC00E2610E1C000B0A3F1 /* Sexual Orientation.swift */; };
 		48DFC0252610FA6F00B0A3F1 /* TableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DFC0242610FA6F00B0A3F1 /* TableHeader.swift */; };
 		48DFC0282610FAB400B0A3F1 /* SelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DFC0272610FAB400B0A3F1 /* SelectionCell.swift */; };
+		48DFC02B2610FEEF00B0A3F1 /* MultipleSelectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DFC02A2610FEEF00B0A3F1 /* MultipleSelectionRow.swift */; };
 		DE8449744EF7CAE262E993BB /* Pods_OneAtATime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76EDAB0A77CFCCE1D150B2E0 /* Pods_OneAtATime.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		48DFC00E2610E1C000B0A3F1 /* Sexual Orientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sexual Orientation.swift"; sourceTree = "<group>"; };
 		48DFC0242610FA6F00B0A3F1 /* TableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeader.swift; sourceTree = "<group>"; };
 		48DFC0272610FAB400B0A3F1 /* SelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionCell.swift; sourceTree = "<group>"; };
+		48DFC02A2610FEEF00B0A3F1 /* MultipleSelectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectionRow.swift; sourceTree = "<group>"; };
 		634A98DF3989DB9E52AE1F6E /* Pods-OneAtATime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneAtATime.debug.xcconfig"; path = "Target Support Files/Pods-OneAtATime/Pods-OneAtATime.debug.xcconfig"; sourceTree = "<group>"; };
 		76EDAB0A77CFCCE1D150B2E0 /* Pods_OneAtATime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneAtATime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C5D21B07E114087CDB8646F /* Pods-OneAtATime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneAtATime.release.xcconfig"; path = "Target Support Files/Pods-OneAtATime/Pods-OneAtATime.release.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			children = (
 				48DFC0242610FA6F00B0A3F1 /* TableHeader.swift */,
 				48DFC0272610FAB400B0A3F1 /* SelectionCell.swift */,
+				48DFC02A2610FEEF00B0A3F1 /* MultipleSelectionRow.swift */,
 			);
 			path = Tables;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				485DB0282608F212002100D1 /* ConfirmButton.swift in Sources */,
 				484A924E260F8F9100C0F942 /* SelectSex.swift in Sources */,
 				485DAFFD26062534002100D1 /* ContentView.swift in Sources */,
+				48DFC02B2610FEEF00B0A3F1 /* MultipleSelectionRow.swift in Sources */,
 				485DB022260815FC002100D1 /* LoginView.swift in Sources */,
 				48DFC00926107CD200B0A3F1 /* OthersSexChoice.swift in Sources */,
 				485DAFFB26062534002100D1 /* OneAtATimeApp.swift in Sources */,

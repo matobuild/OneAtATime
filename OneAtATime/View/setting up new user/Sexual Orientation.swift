@@ -8,18 +8,25 @@
 import SwiftUI
 
 struct SexualOrientation: View {
-  var orientationChoice = ["Straight", "Gay", "Lesbian", "Bisexual", "Asexual", "Demisexual", "Pansexual", "Queer", "Questioning" ]
-  @State private var orientationChoiceChosen: [String] = nil
+  var orientationChoices = ["Straight", "Gay", "Lesbian", "Bisexual", "Asexual", "Demisexual", "Pansexual", "Queer", "Questioning" ]
+  @State private var selections: [String] = []
   
   var body: some View {
     VStack {
       Spacer()
       TopTitle(title: "My sexual Orientation is ?")
       
-      TableHeader(header: "select up to 3")
+      TableHeader(header: "* can select multiple")
       List{
-        ForEach(orientationChoice, id: \.self) { orientationchoice in
-          SelectionCell(listItem: orientationchoice, selectedItem: self.$orientationChoiceChosen)
+        ForEach(orientationChoices, id: \.self) { choice in
+          MultipleSelectionRow(title: choice, isSelected: selections.contains(choice)){
+            if self.selections.contains(choice) {
+              self.selections.removeAll(where: { $0 == choice })
+            }
+            else {
+              self.selections.append(choice)
+            }
+          }
         }
       }
       
