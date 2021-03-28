@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OptionsButton: View {
   let option : String
-  var isChosen = false
+  var isChosen = true
   
   var body: some View {
     if isChosen == true{

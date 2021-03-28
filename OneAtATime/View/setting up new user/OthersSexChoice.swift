@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct OthersSexChoice: View {
+  let gender = ["Men", "Women"]
+  @State private var searchMeUpInGender: String? = "Men"
+  
   @Binding var otherSexChosen: String
   @State private var sexOptions = ""
   @Environment(\.presentationMode) var presentationMode
@@ -36,14 +39,15 @@ struct OthersSexChoice: View {
         
         FormField(fieldName: "gender", fieldValue: $sexOptions)
         Spacer()
-        
-        //need to have selection displace
-        Normal(text: "include me in searches for:")
+       
+        TableHeader(header: "include me in searches for:")
         List{
-          Text("Men")
-          Text("Women")
+          ForEach(gender, id: \.self) { choice in
+            SelectionCell(listItem: choice, selectedItem: self.$searchMeUpInGender)
+          }
         }
-        
+        .frame(minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: 250)
+        Spacer()
       }
       .padding()
   }
@@ -53,3 +57,4 @@ struct OthersSexChoice_Previews: PreviewProvider {
     OthersSexChoice(otherSexChosen: .constant("transgender"))
   }
 }
+
