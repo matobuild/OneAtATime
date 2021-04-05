@@ -11,60 +11,63 @@ import Firebase
 struct NewLoginView: View {
   
   @State private var showLoginView = false
+  @State private var showEditProfileName: Bool = false
   
   @ObservedObject private var userRegistrationViewModel = UserRegistrationViewModel()
   
   var body: some View {
-    if showLoginView {
+    switch true {
+    case showLoginView:
       LoginView()
         .animation(.spring())
         .transition(.slide)
-    }else{
-      VStack {
-        TopTitle(title: "Create an account")
-        
-        FormField(fieldName: "Email", fieldValue: $userRegistrationViewModel.email)
-        RequirementText(iconColor: userRegistrationViewModel.isEmailValid ? Color.secondary : Color(red: 251/255, green: 128/255, blue: 128/255), text: "Is a valid email", isStrikeThrough: userRegistrationViewModel.isEmailValid)
-          .padding()
-        
-        FormField(fieldName: "Password", fieldValue: $userRegistrationViewModel.password, isSecure: true)
+    case showEditProfileName:
+      EditProfileName()
+        .animation(.spring())
+        .transition(.slide)
+    default:
         VStack {
-          RequirementText(iconName: "lock.open", iconColor: userRegistrationViewModel.isPasswordLengthValid ? Color.secondary : Color(red: 251/288, green: 128/255, blue: 128/255), text: "A minimum of 8 characters", isStrikeThrough: userRegistrationViewModel.isPasswordLengthValid)
-          RequirementText(iconName: "lock.open", iconColor: userRegistrationViewModel.isPasswordCapitalLetter ? Color.secondary : Color(red: 251/225, green: 128/225, blue: 128/225), text: "One uppercase letter", isStrikeThrough: userRegistrationViewModel.isPasswordCapitalLetter)
-        }
-        .padding()
-
-        
-        Button(action: {
-          // Proceed to the next screen
-          createNewLogin()
-        }) {
-          if (userRegistrationViewModel.isEmailValid && userRegistrationViewModel.isPasswordLengthValid && userRegistrationViewModel.isPasswordCapitalLetter){
-            ConfirmButton(name: "Sign Up")
-          }else{
-            ConfirmButton(name: "Sign Up")
-              .grayscale(0.4)
-              .disabled(true)
+          TopTitle(title: "Create an account")
+          
+          FormField(fieldName: "Email", fieldValue: $userRegistrationViewModel.email)
+          RequirementText(iconColor: userRegistrationViewModel.isEmailValid ? Color.secondary : Color(red: 251/255, green: 128/255, blue: 128/255), text: "Is a valid email", isStrikeThrough: userRegistrationViewModel.isEmailValid)
+            .padding()
+          
+          FormField(fieldName: "Password", fieldValue: $userRegistrationViewModel.password, isSecure: true)
+          VStack {
+            RequirementText(iconName: "lock.open", iconColor: userRegistrationViewModel.isPasswordLengthValid ? Color.secondary : Color(red: 251/288, green: 128/255, blue: 128/255), text: "A minimum of 8 characters", isStrikeThrough: userRegistrationViewModel.isPasswordLengthValid)
+            RequirementText(iconName: "lock.open", iconColor: userRegistrationViewModel.isPasswordCapitalLetter ? Color.secondary : Color(red: 251/225, green: 128/225, blue: 128/225), text: "One uppercase letter", isStrikeThrough: userRegistrationViewModel.isPasswordCapitalLetter)
           }
-        }
-        
-        HStack {
-          Text("Already have an account?")
-            .font(.system(.body, design: .rounded))
-            .bold()
+          .padding()
+
           
           Button(action: {
-            self.showLoginView = true
-          }){
-            HightlightButton(text: "Sign In")
+            // Proceed to the next screen
+            createNewLogin()
+            self.showEditProfileName = true
+          }) {
+            ConfirmButton(name: "Sign Up",isColored: (userRegistrationViewModel.isEmailValid && userRegistrationViewModel.isPasswordLengthValid && userRegistrationViewModel.isPasswordCapitalLetter))
           }
+          .disabled(!(userRegistrationViewModel.isEmailValid && userRegistrationViewModel.isPasswordLengthValid && userRegistrationViewModel.isPasswordCapitalLetter))
+          
+          HStack {
+            Text("Already have an account?")
+              .font(.system(.body, design: .rounded))
+              .bold()
+            
+            Button(action: {
+              self.showLoginView = true
+            }){
+              HightlightButton(text: "Sign In")
+            }
+          }
+          .padding(.top, 50)
+          
+          Spacer()
         }
-        .padding(.top, 50)
-        
-        Spacer()
-      }
-      .padding()
+        .padding()
     }
+    
   }
   
   func createNewLogin() {

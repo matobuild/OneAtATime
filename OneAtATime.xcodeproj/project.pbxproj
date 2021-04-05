@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		484A9219260EEFB500C0F942 /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484A9218260EEFB500C0F942 /* EditProfile.swift */; };
+		484A9219260EEFB500C0F942 /* EditProfileName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484A9218260EEFB500C0F942 /* EditProfileName.swift */; };
 		484A921C260EF06E00C0F942 /* TopTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484A921B260EF06E00C0F942 /* TopTitle.swift */; };
 		484A924B260F87B900C0F942 /* Selectbirthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484A924A260F87B900C0F942 /* Selectbirthday.swift */; };
 		484A924E260F8F9100C0F942 /* SelectSex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484A924D260F8F9100C0F942 /* SelectSex.swift */; };
@@ -44,7 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		484A9218260EEFB500C0F942 /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
+		484A9218260EEFB500C0F942 /* EditProfileName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileName.swift; sourceTree = "<group>"; };
 		484A921B260EF06E00C0F942 /* TopTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTitle.swift; sourceTree = "<group>"; };
 		484A924A260F87B900C0F942 /* Selectbirthday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selectbirthday.swift; sourceTree = "<group>"; };
 		484A924D260F8F9100C0F942 /* SelectSex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSex.swift; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 		484A9248260F878300C0F942 /* setting up new user */ = {
 			isa = PBXGroup;
 			children = (
-				484A9218260EEFB500C0F942 /* EditProfile.swift */,
+				484A9218260EEFB500C0F942 /* EditProfileName.swift */,
 				484A924A260F87B900C0F942 /* Selectbirthday.swift */,
 				484A924D260F8F9100C0F942 /* SelectSex.swift */,
 				48DFC00826107CD200B0A3F1 /* OthersSexChoice.swift */,
@@ -371,7 +371,7 @@
 				48C7C7A3261ACD62007B11B2 /* HostingTabBar.swift in Sources */,
 				485DB013260709CA002100D1 /* NewLoginView.swift in Sources */,
 				48C7C791261AB18A007B11B2 /* NotificationScreen.swift in Sources */,
-				484A9219260EEFB500C0F942 /* EditProfile.swift in Sources */,
+				484A9219260EEFB500C0F942 /* EditProfileName.swift in Sources */,
 				48DFC00C26107E6F00B0A3F1 /* NormalBodyBold.swift in Sources */,
 				484A9262260F910B00C0F942 /* OptionsButton.swift in Sources */,
 				48C7C7A0261AC27B007B11B2 /* SettingView.swift in Sources */,

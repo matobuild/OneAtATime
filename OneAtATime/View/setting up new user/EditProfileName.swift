@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct EditProfile: View {
+struct EditProfileName: View {
   @State private var name = ""
   
   var body: some View {
@@ -30,6 +30,6 @@ struct EditProfile: View {
 
 struct EditProfile_Previews: PreviewProvider {
   static var previews: some View {
-    EditProfile()
+    EditProfileName()
   }
 }

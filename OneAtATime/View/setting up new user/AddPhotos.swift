@@ -20,6 +20,8 @@ struct AddPhotos: View {
             .resizable()
             .aspectRatio(contentMode: .fit)
         }
+        .navigationTitle("HIDE ME")
+//        .navigationBarTitleDisplayMode(.inline)
         .navigationBarItems(leading: Button(action: {
           mediaItems.deleteAll()
         }, label: {
@@ -30,7 +32,7 @@ struct AddPhotos: View {
         }, label: {
           Image(systemName: "plus")
         }))
-        .padding(.bottom, 30)
+//        .padding(.bottom, 30)
         
         TableHeader(header: "*at least two photos")
         Button(action: {
