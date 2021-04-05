@@ -20,5 +20,6 @@ struct HightlightButton: View {
 struct HightlightButton_Previews: PreviewProvider {
   static var previews: some View {
     HightlightButton(text: "example")
+      .previewLayout(.sizeThatFits)
   }
 }

@@ -20,5 +20,6 @@ struct Normal: View {
 struct Normal_Previews: PreviewProvider {
     static var previews: some View {
       Normal(text: "Example")
+        .previewLayout(.sizeThatFits)
     }
 }

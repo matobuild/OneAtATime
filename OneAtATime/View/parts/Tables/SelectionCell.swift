@@ -32,5 +32,6 @@ struct SelectionCell: View {
 struct SelectionCell_Previews: PreviewProvider {
     static var previews: some View {
       SelectionCell(listItem: "EXAMPLE LIST", selectedItem: .constant("EXAMPLE"))
+        .previewLayout(.sizeThatFits)
     }
 }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OptionsButton: View {
   let option : String
-  var isChosen = true
+  var isChosen = false
   
   var body: some View {
     if isChosen == true{
@@ -45,5 +45,6 @@ struct OptionsButton: View {
 struct OptionsButton_Previews: PreviewProvider {
   static var previews: some View {
     OptionsButton(option: "Example")
+      .previewLayout(.sizeThatFits)
   }
 }

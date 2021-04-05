@@ -21,5 +21,6 @@ struct TableHeader: View {
 struct TableHeader_Previews: PreviewProvider {
     static var previews: some View {
       TableHeader(header: "EXAMPLE")
+        .previewLayout(.sizeThatFits)
     }
 }

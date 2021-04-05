@@ -20,5 +20,6 @@ struct TopTitle: View {
 struct TopTitle_Previews: PreviewProvider {
     static var previews: some View {
       TopTitle(title: "Example")
+        .previewLayout(.sizeThatFits)
     }
 }
