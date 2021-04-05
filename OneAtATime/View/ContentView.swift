@@ -17,7 +17,7 @@ struct ContentView: View {
         .transition(.slide)
     }else{
       ZStack {
-        Color.red
+        Color.orange
           .ignoresSafeArea()
         VStack {
           TopTitle(title: "One at a time")

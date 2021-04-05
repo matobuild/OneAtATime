@@ -54,9 +54,9 @@ struct selectSexPreference: View {
       Button(action: {
         //go to next page
       }){
-          ConfirmButton(name: "Next")
-      
+        ConfirmButton(name: "Next", isColored: !(likeWhatSex.isEmpty))
       }
+      .disabled(likeWhatSex.isEmpty)
       
       Spacer()
     }

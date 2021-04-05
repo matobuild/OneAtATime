@@ -64,14 +64,9 @@ struct SelectSex: View {
         //go to next page
   
       }){
-        if sexChosen != "" || otherSexChosen != ""{
-          ConfirmButton(name: "Next")
-        }else{
-          ConfirmButton(name: "Next")
-            .grayscale(0.4)
-            .disabled(true)
-        }
+        ConfirmButton(name: "Next", isColored: (sexChosen != "" || otherSexChosen != ""))
       }
+      .disabled(!(sexChosen != "" || otherSexChosen != ""))
       
       Spacer()
     }

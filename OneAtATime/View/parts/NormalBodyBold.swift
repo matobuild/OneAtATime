@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Normal: View {
+struct NormalBodyBold: View {
   let text: String
   var body: some View {
     Text(text)
@@ -19,7 +19,7 @@ struct Normal: View {
 
 struct Normal_Previews: PreviewProvider {
     static var previews: some View {
-      Normal(text: "Example")
+      NormalBodyBold(text: "Example")
         .previewLayout(.sizeThatFits)
     }
 }

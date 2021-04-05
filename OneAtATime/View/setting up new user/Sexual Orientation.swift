@@ -33,9 +33,9 @@ struct SexualOrientation: View {
       Button(action: {
         //go to next page
       }){
-        ConfirmButton(name: "Next")
-        
+        ConfirmButton(name: "Next",isColored: !(selections.isEmpty))
       }
+      .disabled((selections.isEmpty))
       
       Spacer()
     }

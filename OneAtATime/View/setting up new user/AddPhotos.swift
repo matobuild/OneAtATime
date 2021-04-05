@@ -15,7 +15,6 @@ struct AddPhotos: View {
     NavigationView {
       VStack {
         TopTitle(title: "Add Photos")
-        Normal(text: "at least 2 photes")
         List(mediaItems.items, id: \.id){ item in
           Image(uiImage: item.photo ?? UIImage())
             .resizable()
@@ -30,21 +29,17 @@ struct AddPhotos: View {
           showSheet = true
         }, label: {
           Image(systemName: "plus")
-      }))
+        }))
+        .padding(.bottom, 30)
         
+        TableHeader(header: "*at least two photos")
         Button(action: {
           //go to next page
           
         }){
-          if mediaItems.items.count >= 2{
-            ConfirmButton(name: "Next")
-          }else{
-            ConfirmButton(name: "Next")
-              .grayscale(0.4)
-              .disabled(true)
-          }
+          ConfirmButton(name: "Next",isColored: (mediaItems.items.count >= 2))
         }
-        
+        .disabled(!(mediaItems.items.count >= 2))
       }
     }
     .sheet(isPresented: $showSheet, content: {

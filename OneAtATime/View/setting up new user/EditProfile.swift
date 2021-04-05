@@ -18,14 +18,9 @@ struct EditProfile: View {
       Button(action: {
         //go to next page
       }){
-        if !(name.isEmpty){
-          ConfirmButton(name: "Next")
-        }else{
-          ConfirmButton(name: "Next")
-            .grayscale(0.4)
-            .disabled(true)
-        }
+        ConfirmButton(name: "Next", isColored: !(name.isEmpty))
       }
+      .disabled(name.isEmpty)
       
       Spacer()
     }

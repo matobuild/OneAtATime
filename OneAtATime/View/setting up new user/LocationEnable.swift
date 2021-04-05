@@ -10,23 +10,19 @@ import SwiftUI
 struct LocationEnable: View {
   @State var condition = false
     var body: some View {
-       
-      
-      Button(action: {
-        //go to next page
-        condition = true
-        
-      }){
-        if condition{
-          ConfirmButton(name: "Next")
-        }else{
-          ConfirmButton(name: "Next")
-            .grayscale(0.4)
-            .disabled(true)
+      VStack {
+        TopTitle(title: "Enable location")
+        Picture(title: "location.viewfinder")
+        TableHeader(header: "*at least two photos")
+        Button(action: {
+          //go to next page
+          condition = true
+          
+        }){
+            ConfirmButton(name: "Allow",isColored: true)
+          }
           
         }
-        
-      }
     }
 }
 

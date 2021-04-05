@@ -40,7 +40,7 @@ struct LoginView: View {
         }
         
         HStack {
-          Normal(text: "Dont have an account?")
+          NormalBodyBold(text: "Dont have an account?")
           
           Button(action: {
             self.showNewLoginView = true

@@ -24,10 +24,16 @@
 		485DB02C260C0455002100D1 /* HightlightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DB02B260C0455002100D1 /* HightlightButton.swift */; };
 		485DB0B0260E3DDA002100D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 485DB0AF260E3DDA002100D1 /* GoogleService-Info.plist */; };
 		48C7C77F261A9806007B11B2 /* LocationEnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C7C77E261A9806007B11B2 /* LocationEnable.swift */; };
+		48C7C791261AB18A007B11B2 /* NotificationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C7C790261AB18A007B11B2 /* NotificationScreen.swift */; };
+		48C7C794261AB3CD007B11B2 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C7C793261AB3CD007B11B2 /* Picture.swift */; };
+		48C7C799261AC266007B11B2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C7C798261AC266007B11B2 /* HomeView.swift */; };
+		48C7C79D261AC273007B11B2 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C7C79C261AC273007B11B2 /* MessageView.swift */; };
+		48C7C7A0261AC27B007B11B2 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C7C79F261AC27B007B11B2 /* SettingView.swift */; };
+		48C7C7A3261ACD62007B11B2 /* HostingTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C7C7A2261ACD62007B11B2 /* HostingTabBar.swift */; };
 		48DE77EA261A160700DB6112 /* PhotoPickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DE77E9261A160700DB6112 /* PhotoPickerModel.swift */; };
 		48DE77ED261A162F00DB6112 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DE77EC261A162F00DB6112 /* PhotoPicker.swift */; };
 		48DFC00926107CD200B0A3F1 /* OthersSexChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DFC00826107CD200B0A3F1 /* OthersSexChoice.swift */; };
-		48DFC00C26107E6F00B0A3F1 /* Normal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DFC00B26107E6F00B0A3F1 /* Normal.swift */; };
+		48DFC00C26107E6F00B0A3F1 /* NormalBodyBold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DFC00B26107E6F00B0A3F1 /* NormalBodyBold.swift */; };
 		48DFC00F2610E1C000B0A3F1 /* Sexual Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DFC00E2610E1C000B0A3F1 /* Sexual Orientation.swift */; };
 		48DFC0252610FA6F00B0A3F1 /* TableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DFC0242610FA6F00B0A3F1 /* TableHeader.swift */; };
 		48DFC0282610FAB400B0A3F1 /* SelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DFC0272610FAB400B0A3F1 /* SelectionCell.swift */; };
@@ -56,10 +62,16 @@
 		485DB02B260C0455002100D1 /* HightlightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HightlightButton.swift; sourceTree = "<group>"; };
 		485DB0AF260E3DDA002100D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		48C7C77E261A9806007B11B2 /* LocationEnable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationEnable.swift; sourceTree = "<group>"; };
+		48C7C790261AB18A007B11B2 /* NotificationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScreen.swift; sourceTree = "<group>"; };
+		48C7C793261AB3CD007B11B2 /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		48C7C798261AC266007B11B2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		48C7C79C261AC273007B11B2 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		48C7C79F261AC27B007B11B2 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		48C7C7A2261ACD62007B11B2 /* HostingTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingTabBar.swift; sourceTree = "<group>"; };
 		48DE77E9261A160700DB6112 /* PhotoPickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerModel.swift; sourceTree = "<group>"; };
 		48DE77EC261A162F00DB6112 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		48DFC00826107CD200B0A3F1 /* OthersSexChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersSexChoice.swift; sourceTree = "<group>"; };
-		48DFC00B26107E6F00B0A3F1 /* Normal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Normal.swift; sourceTree = "<group>"; };
+		48DFC00B26107E6F00B0A3F1 /* NormalBodyBold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalBodyBold.swift; sourceTree = "<group>"; };
 		48DFC00E2610E1C000B0A3F1 /* Sexual Orientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sexual Orientation.swift"; sourceTree = "<group>"; };
 		48DFC0242610FA6F00B0A3F1 /* TableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeader.swift; sourceTree = "<group>"; };
 		48DFC0272610FAB400B0A3F1 /* SelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionCell.swift; sourceTree = "<group>"; };
@@ -93,6 +105,7 @@
 				484A9264260F9AF000C0F942 /* selectSexPreference.swift */,
 				48DFC03B26160D4B00B0A3F1 /* AddPhotos.swift */,
 				48C7C77E261A9806007B11B2 /* LocationEnable.swift */,
+				48C7C790261AB18A007B11B2 /* NotificationScreen.swift */,
 			);
 			path = "setting up new user";
 			sourceTree = "<group>";
@@ -143,6 +156,7 @@
 				485DAFFC26062534002100D1 /* ContentView.swift */,
 				485DB012260709CA002100D1 /* NewLoginView.swift */,
 				485DB021260815FC002100D1 /* LoginView.swift */,
+				48C7C797261AC24B007B11B2 /* TabView */,
 				484A9248260F878300C0F942 /* setting up new user */,
 				485DB0262608F1ED002100D1 /* parts */,
 			);
@@ -164,9 +178,21 @@
 				48DFC0232610FA4B00B0A3F1 /* Tables */,
 				48DFC0112610F99800B0A3F1 /* Buttons */,
 				484A921B260EF06E00C0F942 /* TopTitle.swift */,
-				48DFC00B26107E6F00B0A3F1 /* Normal.swift */,
+				48DFC00B26107E6F00B0A3F1 /* NormalBodyBold.swift */,
+				48C7C793261AB3CD007B11B2 /* Picture.swift */,
 			);
 			path = parts;
+			sourceTree = "<group>";
+		};
+		48C7C797261AC24B007B11B2 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				48C7C7A2261ACD62007B11B2 /* HostingTabBar.swift */,
+				48C7C798261AC266007B11B2 /* HomeView.swift */,
+				48C7C79C261AC273007B11B2 /* MessageView.swift */,
+				48C7C79F261AC27B007B11B2 /* SettingView.swift */,
+			);
+			path = TabView;
 			sourceTree = "<group>";
 		};
 		48DE77E3261A15DA00DB6112 /* Photo */ = {
@@ -335,18 +361,24 @@
 				48DE77EA261A160700DB6112 /* PhotoPickerModel.swift in Sources */,
 				48DFC0282610FAB400B0A3F1 /* SelectionCell.swift in Sources */,
 				485DB01A26070A72002100D1 /* UserRegistrationViewModel.swift in Sources */,
+				48C7C794261AB3CD007B11B2 /* Picture.swift in Sources */,
 				485DB02C260C0455002100D1 /* HightlightButton.swift in Sources */,
 				484A921C260EF06E00C0F942 /* TopTitle.swift in Sources */,
 				48C7C77F261A9806007B11B2 /* LocationEnable.swift in Sources */,
+				48C7C7A3261ACD62007B11B2 /* HostingTabBar.swift in Sources */,
 				485DB013260709CA002100D1 /* NewLoginView.swift in Sources */,
+				48C7C791261AB18A007B11B2 /* NotificationScreen.swift in Sources */,
 				484A9219260EEFB500C0F942 /* EditProfile.swift in Sources */,
-				48DFC00C26107E6F00B0A3F1 /* Normal.swift in Sources */,
+				48DFC00C26107E6F00B0A3F1 /* NormalBodyBold.swift in Sources */,
 				484A9262260F910B00C0F942 /* OptionsButton.swift in Sources */,
+				48C7C7A0261AC27B007B11B2 /* SettingView.swift in Sources */,
+				48C7C799261AC266007B11B2 /* HomeView.swift in Sources */,
 				48DE77ED261A162F00DB6112 /* PhotoPicker.swift in Sources */,
 				48DFC0252610FA6F00B0A3F1 /* TableHeader.swift in Sources */,
 				484A9265260F9AF000C0F942 /* selectSexPreference.swift in Sources */,
 				485DB0282608F212002100D1 /* ConfirmButton.swift in Sources */,
 				484A924E260F8F9100C0F942 /* SelectSex.swift in Sources */,
+				48C7C79D261AC273007B11B2 /* MessageView.swift in Sources */,
 				485DAFFD26062534002100D1 /* ContentView.swift in Sources */,
 				48DFC02B2610FEEF00B0A3F1 /* MultipleSelectionRow.swift in Sources */,
 				485DB022260815FC002100D1 /* LoginView.swift in Sources */,
