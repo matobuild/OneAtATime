@@ -30,6 +30,7 @@
 		48C7C79D261AC273007B11B2 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C7C79C261AC273007B11B2 /* MessageView.swift */; };
 		48C7C7A0261AC27B007B11B2 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C7C79F261AC27B007B11B2 /* SettingView.swift */; };
 		48C7C7A3261ACD62007B11B2 /* HostingTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C7C7A2261ACD62007B11B2 /* HostingTabBar.swift */; };
+		48C7C7C6261AD2AB007B11B2 /* ButtonWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C7C7C5261AD2AB007B11B2 /* ButtonWithIcon.swift */; };
 		48DE77EA261A160700DB6112 /* PhotoPickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DE77E9261A160700DB6112 /* PhotoPickerModel.swift */; };
 		48DE77ED261A162F00DB6112 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DE77EC261A162F00DB6112 /* PhotoPicker.swift */; };
 		48DFC00926107CD200B0A3F1 /* OthersSexChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DFC00826107CD200B0A3F1 /* OthersSexChoice.swift */; };
@@ -68,6 +69,7 @@
 		48C7C79C261AC273007B11B2 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		48C7C79F261AC27B007B11B2 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		48C7C7A2261ACD62007B11B2 /* HostingTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingTabBar.swift; sourceTree = "<group>"; };
+		48C7C7C5261AD2AB007B11B2 /* ButtonWithIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithIcon.swift; sourceTree = "<group>"; };
 		48DE77E9261A160700DB6112 /* PhotoPickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerModel.swift; sourceTree = "<group>"; };
 		48DE77EC261A162F00DB6112 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		48DFC00826107CD200B0A3F1 /* OthersSexChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersSexChoice.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				485DB0272608F212002100D1 /* ConfirmButton.swift */,
+				48C7C7C5261AD2AB007B11B2 /* ButtonWithIcon.swift */,
 				484A9261260F910B00C0F942 /* OptionsButton.swift */,
 				485DB02B260C0455002100D1 /* HightlightButton.swift */,
 			);
@@ -373,6 +376,7 @@
 				484A9262260F910B00C0F942 /* OptionsButton.swift in Sources */,
 				48C7C7A0261AC27B007B11B2 /* SettingView.swift in Sources */,
 				48C7C799261AC266007B11B2 /* HomeView.swift in Sources */,
+				48C7C7C6261AD2AB007B11B2 /* ButtonWithIcon.swift in Sources */,
 				48DE77ED261A162F00DB6112 /* PhotoPicker.swift in Sources */,
 				48DFC0252610FA6F00B0A3F1 /* TableHeader.swift in Sources */,
 				484A9265260F9AF000C0F942 /* selectSexPreference.swift in Sources */,

@@ -37,6 +37,7 @@ struct HostingTabBar: View {
           Image(systemName: "gear")
         }
     }
+    .accentColor(.orange)
   }
 }
   struct HostingTabBar_Previews: PreviewProvider {
