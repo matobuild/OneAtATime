@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct selectSexPreference: View {
+struct SelectSexPreference: View {
   @State private var likeWhatSex = ""
+  @EnvironmentObject var viewRouter: ViewRouter
   
   var body: some View {
     VStack {
@@ -52,7 +53,9 @@ struct selectSexPreference: View {
       Spacer()
       
       Button(action: {
-        //go to next page
+        withAnimation{
+          viewRouter.currentPage = .addPhotos6
+        }
       }){
         ConfirmButton(name: "Next", isColored: !(likeWhatSex.isEmpty))
       }
@@ -66,6 +69,6 @@ struct selectSexPreference: View {
 
 struct selectSexPreference_Previews: PreviewProvider {
     static var previews: some View {
-        selectSexPreference()
+        SelectSexPreference()
     }
 }

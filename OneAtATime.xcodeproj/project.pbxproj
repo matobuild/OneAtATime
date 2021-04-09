@@ -12,7 +12,7 @@
 		484A924B260F87B900C0F942 /* Selectbirthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484A924A260F87B900C0F942 /* Selectbirthday.swift */; };
 		484A924E260F8F9100C0F942 /* SelectSex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484A924D260F8F9100C0F942 /* SelectSex.swift */; };
 		484A9262260F910B00C0F942 /* OptionsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484A9261260F910B00C0F942 /* OptionsButton.swift */; };
-		484A9265260F9AF000C0F942 /* selectSexPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484A9264260F9AF000C0F942 /* selectSexPreference.swift */; };
+		484A9265260F9AF000C0F942 /* SelectSexPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484A9264260F9AF000C0F942 /* SelectSexPreference.swift */; };
 		485DAFFB26062534002100D1 /* OneAtATimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DAFFA26062534002100D1 /* OneAtATimeApp.swift */; };
 		485DAFFD26062534002100D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DAFFC26062534002100D1 /* ContentView.swift */; };
 		485DAFFF2606253C002100D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 485DAFFE2606253C002100D1 /* Assets.xcassets */; };
@@ -23,6 +23,11 @@
 		485DB0282608F212002100D1 /* ConfirmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DB0272608F212002100D1 /* ConfirmButton.swift */; };
 		485DB02C260C0455002100D1 /* HightlightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485DB02B260C0455002100D1 /* HightlightButton.swift */; };
 		485DB0B0260E3DDA002100D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 485DB0AF260E3DDA002100D1 /* GoogleService-Info.plist */; };
+		48B5F37C261E0B8C00934232 /* MotherViewForNewUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B5F37B261E0B8C00934232 /* MotherViewForNewUser.swift */; };
+		48B5F37F261E0BC100934232 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B5F37E261E0BC100934232 /* ViewRouter.swift */; };
+		48B5F38526201BA800934232 /* Page and Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B5F38426201BA800934232 /* Page and Tab.swift */; };
+		48B5F38A26201C6400934232 /* PhotoPickerMediaItemsl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B5F38926201C6400934232 /* PhotoPickerMediaItemsl.swift */; };
+		48B5F390262023C800934232 /* UserPersonalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B5F38F262023C800934232 /* UserPersonalData.swift */; };
 		48C7C77F261A9806007B11B2 /* LocationEnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C7C77E261A9806007B11B2 /* LocationEnable.swift */; };
 		48C7C791261AB18A007B11B2 /* NotificationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C7C790261AB18A007B11B2 /* NotificationScreen.swift */; };
 		48C7C794261AB3CD007B11B2 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C7C793261AB3CD007B11B2 /* Picture.swift */; };
@@ -35,7 +40,7 @@
 		48DE77ED261A162F00DB6112 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DE77EC261A162F00DB6112 /* PhotoPicker.swift */; };
 		48DFC00926107CD200B0A3F1 /* OthersSexChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DFC00826107CD200B0A3F1 /* OthersSexChoice.swift */; };
 		48DFC00C26107E6F00B0A3F1 /* NormalBodyBold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DFC00B26107E6F00B0A3F1 /* NormalBodyBold.swift */; };
-		48DFC00F2610E1C000B0A3F1 /* Sexual Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DFC00E2610E1C000B0A3F1 /* Sexual Orientation.swift */; };
+		48DFC00F2610E1C000B0A3F1 /* SexualOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DFC00E2610E1C000B0A3F1 /* SexualOrientation.swift */; };
 		48DFC0252610FA6F00B0A3F1 /* TableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DFC0242610FA6F00B0A3F1 /* TableHeader.swift */; };
 		48DFC0282610FAB400B0A3F1 /* SelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DFC0272610FAB400B0A3F1 /* SelectionCell.swift */; };
 		48DFC02B2610FEEF00B0A3F1 /* MultipleSelectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DFC02A2610FEEF00B0A3F1 /* MultipleSelectionRow.swift */; };
@@ -49,7 +54,7 @@
 		484A924A260F87B900C0F942 /* Selectbirthday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selectbirthday.swift; sourceTree = "<group>"; };
 		484A924D260F8F9100C0F942 /* SelectSex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSex.swift; sourceTree = "<group>"; };
 		484A9261260F910B00C0F942 /* OptionsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsButton.swift; sourceTree = "<group>"; };
-		484A9264260F9AF000C0F942 /* selectSexPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectSexPreference.swift; sourceTree = "<group>"; };
+		484A9264260F9AF000C0F942 /* SelectSexPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSexPreference.swift; sourceTree = "<group>"; };
 		485DAFF726062534002100D1 /* OneAtATime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneAtATime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		485DAFFA26062534002100D1 /* OneAtATimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneAtATimeApp.swift; sourceTree = "<group>"; };
 		485DAFFC26062534002100D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +67,11 @@
 		485DB0272608F212002100D1 /* ConfirmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmButton.swift; sourceTree = "<group>"; };
 		485DB02B260C0455002100D1 /* HightlightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HightlightButton.swift; sourceTree = "<group>"; };
 		485DB0AF260E3DDA002100D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		48B5F37B261E0B8C00934232 /* MotherViewForNewUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherViewForNewUser.swift; sourceTree = "<group>"; };
+		48B5F37E261E0BC100934232 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		48B5F38426201BA800934232 /* Page and Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page and Tab.swift"; sourceTree = "<group>"; };
+		48B5F38926201C6400934232 /* PhotoPickerMediaItemsl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerMediaItemsl.swift; sourceTree = "<group>"; };
+		48B5F38F262023C800934232 /* UserPersonalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPersonalData.swift; sourceTree = "<group>"; };
 		48C7C77E261A9806007B11B2 /* LocationEnable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationEnable.swift; sourceTree = "<group>"; };
 		48C7C790261AB18A007B11B2 /* NotificationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScreen.swift; sourceTree = "<group>"; };
 		48C7C793261AB3CD007B11B2 /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
@@ -74,7 +84,7 @@
 		48DE77EC261A162F00DB6112 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		48DFC00826107CD200B0A3F1 /* OthersSexChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersSexChoice.swift; sourceTree = "<group>"; };
 		48DFC00B26107E6F00B0A3F1 /* NormalBodyBold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalBodyBold.swift; sourceTree = "<group>"; };
-		48DFC00E2610E1C000B0A3F1 /* Sexual Orientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sexual Orientation.swift"; sourceTree = "<group>"; };
+		48DFC00E2610E1C000B0A3F1 /* SexualOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexualOrientation.swift; sourceTree = "<group>"; };
 		48DFC0242610FA6F00B0A3F1 /* TableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeader.swift; sourceTree = "<group>"; };
 		48DFC0272610FAB400B0A3F1 /* SelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionCell.swift; sourceTree = "<group>"; };
 		48DFC02A2610FEEF00B0A3F1 /* MultipleSelectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectionRow.swift; sourceTree = "<group>"; };
@@ -99,12 +109,13 @@
 		484A9248260F878300C0F942 /* setting up new user */ = {
 			isa = PBXGroup;
 			children = (
+				48B5F37B261E0B8C00934232 /* MotherViewForNewUser.swift */,
 				484A9218260EEFB500C0F942 /* EditProfileName.swift */,
 				484A924A260F87B900C0F942 /* Selectbirthday.swift */,
 				484A924D260F8F9100C0F942 /* SelectSex.swift */,
 				48DFC00826107CD200B0A3F1 /* OthersSexChoice.swift */,
-				48DFC00E2610E1C000B0A3F1 /* Sexual Orientation.swift */,
-				484A9264260F9AF000C0F942 /* selectSexPreference.swift */,
+				48DFC00E2610E1C000B0A3F1 /* SexualOrientation.swift */,
+				484A9264260F9AF000C0F942 /* SelectSexPreference.swift */,
 				48DFC03B26160D4B00B0A3F1 /* AddPhotos.swift */,
 				48C7C77E261A9806007B11B2 /* LocationEnable.swift */,
 				48C7C790261AB18A007B11B2 /* NotificationScreen.swift */,
@@ -136,6 +147,7 @@
 				485DAFFA26062534002100D1 /* OneAtATimeApp.swift */,
 				485DB01D26070AC2002100D1 /* Model */,
 				485DB01C26070AA9002100D1 /* View */,
+				48B5F383262018F600934232 /* ViewModel */,
 				485DAFFE2606253C002100D1 /* Assets.xcassets */,
 				485DB0032606253C002100D1 /* Info.plist */,
 				485DB0AF260E3DDA002100D1 /* GoogleService-Info.plist */,
@@ -168,7 +180,8 @@
 		485DB01D26070AC2002100D1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				485DB01926070A72002100D1 /* UserRegistrationViewModel.swift */,
+				48B5F38426201BA800934232 /* Page and Tab.swift */,
+				48B5F38F262023C800934232 /* UserPersonalData.swift */,
 				48DE77E3261A15DA00DB6112 /* Photo */,
 			);
 			path = Model;
@@ -184,6 +197,24 @@
 				48C7C793261AB3CD007B11B2 /* Picture.swift */,
 			);
 			path = parts;
+			sourceTree = "<group>";
+		};
+		48B5F383262018F600934232 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				48B5F38826201C3A00934232 /* Photo */,
+				48B5F37E261E0BC100934232 /* ViewRouter.swift */,
+				485DB01926070A72002100D1 /* UserRegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		48B5F38826201C3A00934232 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				48B5F38926201C6400934232 /* PhotoPickerMediaItemsl.swift */,
+			);
+			path = Photo;
 			sourceTree = "<group>";
 		};
 		48C7C797261AC24B007B11B2 /* TabView */ = {
@@ -360,17 +391,21 @@
 			files = (
 				48DFC03C26160D4B00B0A3F1 /* AddPhotos.swift in Sources */,
 				484A924B260F87B900C0F942 /* Selectbirthday.swift in Sources */,
-				48DFC00F2610E1C000B0A3F1 /* Sexual Orientation.swift in Sources */,
+				48DFC00F2610E1C000B0A3F1 /* SexualOrientation.swift in Sources */,
 				48DE77EA261A160700DB6112 /* PhotoPickerModel.swift in Sources */,
 				48DFC0282610FAB400B0A3F1 /* SelectionCell.swift in Sources */,
 				485DB01A26070A72002100D1 /* UserRegistrationViewModel.swift in Sources */,
 				48C7C794261AB3CD007B11B2 /* Picture.swift in Sources */,
+				48B5F37F261E0BC100934232 /* ViewRouter.swift in Sources */,
 				485DB02C260C0455002100D1 /* HightlightButton.swift in Sources */,
 				484A921C260EF06E00C0F942 /* TopTitle.swift in Sources */,
 				48C7C77F261A9806007B11B2 /* LocationEnable.swift in Sources */,
+				48B5F38526201BA800934232 /* Page and Tab.swift in Sources */,
+				48B5F390262023C800934232 /* UserPersonalData.swift in Sources */,
 				48C7C7A3261ACD62007B11B2 /* HostingTabBar.swift in Sources */,
 				485DB013260709CA002100D1 /* NewLoginView.swift in Sources */,
 				48C7C791261AB18A007B11B2 /* NotificationScreen.swift in Sources */,
+				48B5F38A26201C6400934232 /* PhotoPickerMediaItemsl.swift in Sources */,
 				484A9219260EEFB500C0F942 /* EditProfileName.swift in Sources */,
 				48DFC00C26107E6F00B0A3F1 /* NormalBodyBold.swift in Sources */,
 				484A9262260F910B00C0F942 /* OptionsButton.swift in Sources */,
@@ -379,10 +414,11 @@
 				48C7C7C6261AD2AB007B11B2 /* ButtonWithIcon.swift in Sources */,
 				48DE77ED261A162F00DB6112 /* PhotoPicker.swift in Sources */,
 				48DFC0252610FA6F00B0A3F1 /* TableHeader.swift in Sources */,
-				484A9265260F9AF000C0F942 /* selectSexPreference.swift in Sources */,
+				484A9265260F9AF000C0F942 /* SelectSexPreference.swift in Sources */,
 				485DB0282608F212002100D1 /* ConfirmButton.swift in Sources */,
 				484A924E260F8F9100C0F942 /* SelectSex.swift in Sources */,
 				48C7C79D261AC273007B11B2 /* MessageView.swift in Sources */,
+				48B5F37C261E0B8C00934232 /* MotherViewForNewUser.swift in Sources */,
 				485DAFFD26062534002100D1 /* ContentView.swift in Sources */,
 				48DFC02B2610FEEF00B0A3F1 /* MultipleSelectionRow.swift in Sources */,
 				485DB022260815FC002100D1 /* LoginView.swift in Sources */,

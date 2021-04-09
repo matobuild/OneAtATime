@@ -10,6 +10,7 @@ import SwiftUI
 struct AddPhotos: View {
   @ObservedObject var mediaItems = PickedMediaItems()
   @State private var showSheet = false
+  @EnvironmentObject var viewRouter: ViewRouter
   
   var body: some View {
     NavigationView {
@@ -36,12 +37,15 @@ struct AddPhotos: View {
         
         TableHeader(header: "*at least two photos")
         Button(action: {
-          //go to next page
+          withAnimation{
+            viewRouter.currentPage = .locationEnable7
+          }
           
         }){
           ConfirmButton(name: "Next",isColored: (mediaItems.items.count >= 2))
         }
         .disabled(!(mediaItems.items.count >= 2))
+        Spacer()
       }
     }
     .sheet(isPresented: $showSheet, content: {

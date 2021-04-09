@@ -12,6 +12,7 @@ struct LoginView: View {
   @State private var showNewLoginView = false
   @State private var email = ""
   @State private var password = ""
+  @StateObject var viewRouter = ViewRouter()
   
   var body: some View {
     if showNewLoginView{
@@ -28,6 +29,9 @@ struct LoginView: View {
         Button(action: {
           //go to login
           login()
+          withAnimation{
+            viewRouter.currentPage = .hostingTabBar
+          }
         }){
           if !(email.isEmpty || password.isEmpty){
             ConfirmButton(name: "Log in ")

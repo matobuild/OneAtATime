@@ -10,6 +10,7 @@ import SwiftUI
 struct SexualOrientation: View {
   var orientationChoices = ["Straight", "Gay", "Lesbian", "Bisexual", "Asexual", "Demisexual", "Pansexual", "Queer", "Questioning" ]
   @State private var selections: [String] = []
+  @EnvironmentObject var viewRouter: ViewRouter
   
   var body: some View {
     VStack {
@@ -31,7 +32,9 @@ struct SexualOrientation: View {
       }
       
       Button(action: {
-        //go to next page
+        withAnimation{
+          viewRouter.currentPage = .selectSexPreference5
+        }
       }){
         ConfirmButton(name: "Next",isColored: !(selections.isEmpty))
       }

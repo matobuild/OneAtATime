@@ -9,7 +9,8 @@ import SwiftUI
 
 struct Selectbirthday: View {
   @State private var date = Date()
-
+  @EnvironmentObject var viewRouter: ViewRouter
+  
   var body: some View {
     VStack {
       Spacer()
@@ -23,9 +24,12 @@ struct Selectbirthday: View {
       .labelsHidden()
       
       Button(action: {
-        //go to next page
+        withAnimation{
+          viewRouter.currentPage = .selectSex3
+        }
+        
       }){
-          ConfirmButton(name: "Next")
+          ConfirmButton(name: "Next", isColored: true)
       }
       
       Spacer()

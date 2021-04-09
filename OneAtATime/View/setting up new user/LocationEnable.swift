@@ -9,15 +9,17 @@ import SwiftUI
 
 struct LocationEnable: View {
   @State var condition = false
+  @EnvironmentObject var viewRouter: ViewRouter
     var body: some View {
       VStack {
         TopTitle(title: "Enable location")
         Picture(title: "location.viewfinder")
-        TableHeader(header: "*at least two photos")
+      
         Button(action: {
-          //go to next page
           condition = true
-          
+          withAnimation{
+            viewRouter.currentPage = .notificationScreen8
+          }
         }){
             ConfirmButton(name: "Allow",isColored: true)
           }

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct EditProfileName: View {
   @State private var name = ""
+  @EnvironmentObject var viewRouter: ViewRouter
   
   var body: some View {
     VStack {
@@ -16,7 +17,9 @@ struct EditProfileName: View {
       TopTitle(title: "My name is?")
       FormField(fieldName: "name", fieldValue: $name)
       Button(action: {
-        //go to next page
+        withAnimation{
+          viewRouter.currentPage = .selectBirthday2
+        }
       }){
         ConfirmButton(name: "Next", isColored: !(name.isEmpty))
       }

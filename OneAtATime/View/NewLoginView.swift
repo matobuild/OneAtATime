@@ -11,7 +11,8 @@ import Firebase
 struct NewLoginView: View {
   
   @State private var showLoginView = false
-  @State private var showEditProfileName: Bool = false
+  @State private var showMotherViewForNewUser: Bool = false
+  @StateObject var viewRouter = ViewRouter()
   
   @ObservedObject private var userRegistrationViewModel = UserRegistrationViewModel()
   
@@ -21,8 +22,9 @@ struct NewLoginView: View {
       LoginView()
         .animation(.spring())
         .transition(.slide)
-    case showEditProfileName:
-      EditProfileName()
+    case showMotherViewForNewUser:
+      MotherViewForNewUser()
+        .environmentObject(viewRouter)
         .animation(.spring())
         .transition(.slide)
     default:
@@ -44,7 +46,7 @@ struct NewLoginView: View {
           Button(action: {
             // Proceed to the next screen
             createNewLogin()
-            self.showEditProfileName = true
+            self.showMotherViewForNewUser = true
           }) {
             ConfirmButton(name: "Sign Up",isColored: (userRegistrationViewModel.isEmailValid && userRegistrationViewModel.isPasswordLengthValid && userRegistrationViewModel.isPasswordCapitalLetter))
           }

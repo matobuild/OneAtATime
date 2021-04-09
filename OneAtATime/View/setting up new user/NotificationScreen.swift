@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct NotificationScreen: View {
+  @EnvironmentObject var viewRouter: ViewRouter
+  
   var body: some View {
     VStack {
       TopTitle(title: "Enable Notification")
       Picture(title: "sparkle")
       Button(action: {
         //enable notification
+        withAnimation{
+          viewRouter.currentPage = .hostingTabBar
+        }
       }){
           ConfirmButton(name: "Allow",isColored: true)
         }

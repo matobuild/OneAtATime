@@ -8,11 +8,6 @@
 import SwiftUI
 
 struct HostingTabBar: View {
-  private enum Tab: Hashable {
-    case home
-    case message
-    case settings
-  }
   
   @State private var selectedTab: Tab = .home
   

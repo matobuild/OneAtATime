@@ -48,20 +48,3 @@ struct PhotoPickerModel: Identifiable {
     }
   }
 }
-
-  class PickedMediaItems: ObservableObject {
-    @Published var items = [PhotoPickerModel]()
-    
-    func append(item: PhotoPickerModel) {
-      items.append(item)
-    }
-    
-    func  deleteAll() {
-      for (index, _) in items.enumerated(){
-        items[index].delete()
-      }
-      
-      items.removeAll()
-    }
-  }
-

@@ -11,6 +11,7 @@ struct SelectSex: View {
   @State private var sexChosen = ""
   @State private var otherSexChosen = ""
   @State private var isModel = false
+  @EnvironmentObject var viewRouter: ViewRouter
   
   var body: some View {
     VStack {
@@ -61,7 +62,9 @@ struct SelectSex: View {
       
       Spacer()
       Button(action: {
-        //go to next page
+        withAnimation{
+          viewRouter.currentPage = .sexualOrientation4
+        }
   
       }){
         ConfirmButton(name: "Next", isColored: (sexChosen != "" || otherSexChosen != ""))
